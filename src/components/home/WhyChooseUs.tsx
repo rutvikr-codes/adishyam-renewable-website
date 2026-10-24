@@ -75,13 +75,6 @@ export const WhyChooseUs: React.FC = () => {
             );
           })}
         </div>
-
-        {/* Responsible Disclaimer */}
-        <div className="mt-12 text-center">
-          <p className="text-xs text-slate-400 max-w-xl mx-auto">
-            These commitments reflect our operational guidelines and engineering approach. Specific project metrics, equipment guarantees, and execution contracts are established on a per-project basis.
-          </p>
-        </div>
       </div>
     </section>
   );

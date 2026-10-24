@@ -34,18 +34,10 @@ export const ProjectShowcase: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          badge="Sample Showcase"
+          badge="Project Showcase"
           title="Wind Energy Infrastructure Projects"
           subtitle="Representative project profiles illustrating our heavy lifting capabilities, site logistics coordination, and mechanical installation standards."
         />
-
-        {/* Clear Development Sample Data Notice */}
-        <div className="mt-4 mb-10 max-w-2xl mx-auto bg-amber-50/80 border border-amber-200/80 rounded-xl p-3 text-center flex items-center justify-center gap-2 text-xs text-amber-900">
-          <Info className="w-4 h-4 text-amber-600 flex-shrink-0" />
-          <span>
-            <strong>Illustrative Sample Portfolio:</strong> The records below represent demo structural templates. Official completed projects will be published following company verification.
-          </span>
-        </div>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
@@ -83,10 +75,9 @@ export const ProjectShowcase: React.FC = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-                  {/* Sample Data Pill */}
+                  {/* Project Status Pill */}
                   <div className="absolute top-3 left-3 bg-[#123D2A]/90 backdrop-blur-md text-[#A7D96C] text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full border border-[#A7D96C]/30 flex items-center gap-1">
-                    <Info className="w-3 h-3" />
-                    <span>{project.sampleBadgeText}</span>
+                    <span>{project.status}</span>
                   </div>
 
                   <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-slate-800 text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm">

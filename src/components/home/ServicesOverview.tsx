@@ -33,15 +33,9 @@ export const ServicesOverview: React.FC = () => {
         <SectionHeading
           badge="Core Execution Capabilities"
           title="Engineered Services for Wind Energy Infrastructure"
-          subtitle="Proposed core service offerings covering heavy-lift turbine erection, internal mechanical assembly, and field engineering coordination."
+          subtitle="Comprehensive service offerings covering heavy-lift turbine erection, internal mechanical assembly, and field engineering coordination."
+          className="mb-14"
         />
-
-        {/* Informative notice badge regarding proposed scope */}
-        <div className="mt-4 mb-12 max-w-2xl mx-auto text-center">
-          <p className="text-xs text-slate-500 bg-[#F7F8F3] py-1.5 px-4 rounded-full inline-block border border-slate-200">
-            Note: Service categories reflect proposed scope capabilities; detailed project contracts are customized per OEM &amp; developer requirements.
-          </p>
-        </div>
 
         {/* 6 Grid Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

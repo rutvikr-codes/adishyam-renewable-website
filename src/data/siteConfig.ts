@@ -71,7 +71,7 @@ export const siteConfig: SiteConfig = {
     { name: "Contact", href: "/contact" },
   ],
   notice: {
-    isDemoData: true,
+    isDemoData: false,
     disclaimer:
       "All project records, gallery photos, and operational metrics displayed herein are illustrative sample structures. Exact project accomplishments and client references will be verified and supplied by Adishyam Renewable Private Limited prior to public release.",
   },

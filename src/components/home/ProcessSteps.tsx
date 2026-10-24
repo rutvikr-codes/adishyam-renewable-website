@@ -32,13 +32,8 @@ export const ProcessSteps: React.FC = () => {
           badge="Structured Methodology"
           title="Project Execution Lifecycle"
           subtitle="From initial scope alignment to final mechanical handover, our multi-stage workflow enforces engineering rigor at every step."
+          className="mb-14"
         />
-
-        <div className="mt-4 mb-12 max-w-2xl mx-auto text-center">
-          <p className="text-xs text-slate-500 bg-white py-1.5 px-4 rounded-full inline-block border border-slate-200">
-            *Execution phases and milestone deliverables are tailored to specific project specifications, OEM standards, and site terrain conditions.
-          </p>
-        </div>
 
         {/* Process Flow Cards */}
         <div className="relative">
