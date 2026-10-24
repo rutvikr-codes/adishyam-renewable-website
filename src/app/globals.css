@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #123D2A;
+  --color-forest-deep: #0D2B1D;
+  --color-forest-light: #1A543A;
+  --color-renewable: #27864A;
+  --color-renewable-hover: #1F6B3B;
+  --color-renewable-light: #34A85E;
+  --color-lime: #A7D96C;
+  --color-lime-light: #C2E894;
+  --color-warm-bg: #F7F8F3;
+  --color-warm-card: #FFFFFF;
+  --color-charcoal: #17231D;
+  --color-charcoal-muted: #3D4F46;
+}
+
+:root {
+  --background: #F7F8F3;
+  --foreground: #17231D;
+  --forest: #123D2A;
+  --renewable: #27864A;
+  --lime: #A7D96C;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Custom engineering grid background pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(18, 61, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18, 61, 42, 0.05) 1px, transparent 1px);
+}
+
+.bg-grid-pattern-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+}
+
+/* Subtle wind turbine blade rotation animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+}
+
+.animate-spin-slower {
+  animation: spin-slow 36s linear infinite;
+}
+
+/* Focus styles for WCAG 2.2 accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid #27864A;
+  outline-offset: 2px;
+}
